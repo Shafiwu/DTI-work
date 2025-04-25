@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.logo{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    display: flex;
+}
+.logo a{
+    color: white;
+}
+.logo a:hover{
+    color:rgb(177,213,69);
+}
+nav{
+   background: rgb(171,172,169);
+   justify-content: space-between;
+   display: flex;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    /* display: flex; */
+    margin: 30px 5px;
+    gap: 30px;
+    padding: 5px;
+    font-size: 20px;
+}
+nav li a{
+    color: white;
+}
+nav li a:hover{
+    color:rgb(177,213,69) ;
+}
+.bg{
+    height:90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.652),rgba(0, 0, 0, 0.482),rgba(0, 0, 0, 0.356)), url(/IMG/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.consult{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    background:rgb(56, 56, 55);
+    color: white;
+}
+.consult img{
+    border-radius: 15px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px;
+}
+.consult h2{
+    font-size: 30px;
+}
+.abts{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
+.abts h1{
+    color:rgb(177,213,69);
+    margin: 10px;
+}
+.abts h2{
+    color: rgb(177,213,69);
+}
+.conter h2{
+    color: rgb(177,213,69);
+}
+.abts p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.ceo{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+}
+.ceo div{
+    width: 30%;
+}
+/* services */
+.serve{
+    display: flex;
+    /* width: 100%; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.conter{
+    /* width: auto; */
+    /* width: 30%; */
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+.cont h1{
+    font-size: 20px;
+}
+.cont p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+.abt{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
+.abt h1{
+    /* border: 2px solid black; */
+    margin: 30px;
+}
+.abt h2{
+    color: white;
+}
+/* porfolio */
+.portpic img{
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+}
+.portpic{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 80vh;
+    width: 75%;
+    margin: 50px 200px;
+    padding: 50px;
+    box-shadow: 2px 2px 2px;
+}
+/* footer */
+footer{
+    justify-content: center;
+    display: flex;
+    gap: 60px;
+    background-color: black;
+    height: 30vh;
+    /* margin-top: 20px; */
+}
+
+footer h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+margin-top: 40px;
+}
+
+footer p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.foot p{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background: black;
+}
+
+.foot .icons{
+    color: white;
+    font-size: 25px;
+    /* margin-top: 8px; */
+}
+/* about us */
+.sheff img{
+    object-fit: cover;
+}
+/* .ceo img{
+    object-fit: fill;
+} */
+ /* contact */
+ .form{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 50px;
+    margin-left: 580px;
+    /* align-items: center; */
+    justify-content: space-around;
+    text-align: center;
+    width: 40%;
+    line-height: 2;
+ }
+ form label{
+    /* font-size: 20px; */
+    color: rgb(177,213,69);
+    padding: 30px;
+ }
+ form input{
+    padding: 20px;
+    width: 400px;
+ }
+
+ /* Mobile View */
+@media screen and (max-width: 767px) {
+    .logo {
+        font-size: 25px;
+        margin: 10px;
+        justify-content: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .bg {
+        height: 60vh;
+    }
+
+    .consult {
+        flex-direction: column;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .ceo, .serve, .conter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ceo div, .portpic {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .portpic img {
+        height: auto;
+        width: 90%;
+    }
+
+    .portpic {
+        width: 95%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .form {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .foot p {
+        font-size: 16px;
+    }
+
+    .foot .icons {
+        font-size: 20px;
+    }
+}
+
+/* Tablet View */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .logo {
+        font-size: 35px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .ceo, .serve, .conter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ceo div, .portpic {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .portpic {
+        height: auto;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .form {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form input {
+        width: 90%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 20px 0;
+    }
+}
